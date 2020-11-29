@@ -35,7 +35,7 @@ class Instagram:
         Instagram.scrollDown(self) #scrolldown until last followers
  
         self.followersList=set()
-        followers=self.browser.find_elements_by_css_selector(".FPmhX.notranslate._0imsa ") #tüm takipçileri çeker parantez içi a tag class adı.
+        followers=self.browser.find_elements_by_css_selector(".FPmhX.notranslate._0imsa ") #take all followers 
         followerCount=0
         
         for user in followers:
